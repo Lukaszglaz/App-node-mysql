@@ -1,0 +1,109 @@
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Home Page</title>
+    <style>
+      /* Nowe kolory */ .jumbotron { color: #0c0a10; margin-bottom: 20px;
+      padding: 20px; border-radius: 10px; } /* Dodatkowy div */ .app-description
+      { color: #0c0a10; padding: 20px; margin-bottom: 20px; border-radius: 10px;
+      } /* Bloki informacyjne */ .info-block { color: #0c0a10; padding: 20px;
+      margin-bottom: 20px; border-radius: 10px; } /* Przycisk */ .custom-button
+      { background-color: #0c0a10; color: #1cd4e2; border: none; padding: 10px
+      20px; border-radius: 5px; cursor: pointer; } .custom-button:hover { color:
+      #0c0a10; }
+    </style>
+  </head>
+  <body>
+
+    <nav>
+      <h4>Node App</h4>
+
+      <ul>
+        <li><a href="/">Home</a></li>
+        {{#if user}}
+          <li><a href="/profile">Profile</a></li>
+          <li><a href="/auth/logout">Logout</a></li>
+        {{else}}
+          <li><a href="/login">Login</a></li>
+          <li><a href="/register">Register</a></li>
+        {{/if}}
+      </ul>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="container mt-4">
+        <div
+          class="jumbotron"
+          style="background-color: #f8f9fa; padding: 20px;"
+        >
+          <h1 class="display-4">Login Project</h1>
+          <p class="lead">
+            Welcome to the Login Project, a platform designed to simplify your
+            login experience.
+          </p>
+          <hr class="my-4" />
+          <p>
+            Our goal is to provide a seamless and secure login process. The
+            application leverages utility classes for effective typography and
+            spacing, ensuring a comfortable and visually appealing user
+            interface.
+          </p>
+          <a href="#" role="button" class="btn btn-primary btn-lg">Learn more</a>
+        </div>
+      </div>
+      <hr />
+
+      <div
+        class="app-description"
+        style="background-color: #f8f9fa; padding: 20px; margin-top: 20px; border-radius: 10px;"
+      >
+        <h2>About the Application</h2>
+        <p>I am a young programming enthusiast, and this is my login
+          application.</p>
+      </div>
+
+      <div
+        class="info-block"
+        style="background-color: #f8f9fa; padding: 20px; margin-top: 20px; border-radius: 10px;"
+      >
+        <h3>Additional Information</h3>
+        <p>An application that uses cookies and access to libraries and
+          resources:</p>
+        <ul>
+          <li>bcryptjs</li>
+          <li>body-parser</li>
+          <li>cookie-parser</li>
+          <li>crypto</li>
+          <li>dotenv</li>
+          <li>express</li>
+          <li>hbs</li>
+          <li>jsonwebtoken</li>
+          <li>mysql</li>
+          <li>nodemon</li>
+          <li>nodemailer</li>
+          <li>speakeasy</li>
+          <li>thirty-two</li>
+        </ul>
+
+      </div>
+      <hr />
+      <div class="footer">
+        <p>© 2024 All Rights Reserved. By glazlukasz.pl</p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+nav {
+  background-color: #444;
+  color: #ddd;
+  padding: 10px 50px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+nav li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 8px;
+  transition: 0.5s;
+  color: #ddd;
+}
+
+nav li a:hover {
+  color: #1cd4e2;
+  text-decoration: none;
+}
+
+.cor-reg {
+  padding: 8px 0;
+}
+
+.mar-reg {
+  margin: 15px 0 0 0;
+}
+
+.avatar-ctn {
+  background-color: orange;
+  text-align: center;
+}
+
+.avatar {
+  width: 65%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.footer {
+  text-align: center;
+  color: #000;
+}
+
+.remember-password {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.remember-password a {
+  color: #000;
+  position: relative;
+  transition: 0.2s linear;
+}
+
+.remember-password a:hover {
+  color: blue;
+}

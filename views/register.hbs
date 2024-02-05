@@ -1,0 +1,85 @@
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Register Page</title>
+  </head>
+  <body>
+
+    <nav>
+      <h4>Node MySQL</h4>
+
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+      </ul>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="card">
+        <div class="card-header">
+          Register Form
+        </div>
+        <div class="card-body">
+          <form action="/auth/register" method="POST">
+            <div class="form-group">
+              <label class="cor-reg" for="name">Name</label>
+              <input type="text" class="form-control" id="name" name="name" />
+            </div>
+            <div class="form-group">
+              <label class="cor-reg" for="email">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+              />
+            </div>
+            <div class="form-group">
+              <label class="cor-reg" for="password">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+              />
+            </div>
+            <div class="form-group">
+              <label class="cor-reg" for="passwordConfirm">Confirm Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="passwordConfigrm"
+                name="passwordConfirm"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary mar-reg">Register User</button>
+          </form>
+        </div>
+      </div>
+
+      {{#if message}}
+        <h4 class="alert alert-danger mt-4">{{message}}</h4>
+      {{/if}}
+      <hr />
+      <div class="footer">
+        <p>© 2024 All Rights Reserved. By glazlukasz.pl</p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
